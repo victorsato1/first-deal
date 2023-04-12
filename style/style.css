@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/img/R.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#text{
+    position: absolute;
+    width: 40%;
+    top:35%;
+    left: 3%;
+    padding: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+h1{
+    padding-bottom: 10px;
+    border-bottom: 3px solid orangered;
+    font-size: 60px;
+}
+.mini-text{
+    padding-top: 20px;
+    color: rgba(144, 29, 29, 0.899);
+    font-size: 25px;
+    text-transform: none;
+}
+#menuIcon{
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 40px;
+    right: 60px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.menu-box{
+    width: 0;
+    height: 0;
+    background:rgba(0, 0, 0, 0.8) ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    border-bottom-left-radius: 100%;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+}
+
+.menu-box.open-menu{
+    width: 100%;
+    height: 100vh;
+    border-bottom-left-radius: 0;
+}
+.menu-box.open-menu ul li{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s ease, opacity 1s ease;
+    transition-delay: 0.5s;
+}
+.menu-box ul li{
+    list-style: none;
+    margin: 20px;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateX(400px);
+}
+.menu-box ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+    text-shadow: 0 0 0 red;
+    transition: text-shadow 0.5s ease, transform 0.5s ease;
+} 
+.menu-box ul li a:hover{
+    text-shadow: -3px 3px 0 red;
+    transform: translateY(-6px);
+}
+.menu-box ul li a:hover::after{
+    content: ".";
+}
+
+.logo{
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h4{
+    font-size: 50px;
+    color: navy;
+    font-style: oblique;
+        text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.8);
+}
+.mini-text2{
+    margin-top: 25px;
+    color: black;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-left: 340px;
+margin-right: 335px;
+    font-size: 19px;
+}
+span{
+    background-color: rgba(128, 128, 128, 0.622);
+    color: black;
+    font-style: italic;
+}
+.down-text2{
+    display: none;
+}
+
+#services{
+    background: linear-gradient(48deg, black,grey);
+background-repeat: no-repeat;
+background-size: cover;
+height: 70vh;
+margin-left: 8%;
+margin-right: 8%;
+margin-top: 90px;
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+h2{
+    color: rgb(255, 241, 241);
+    font-style: oblique;
+        text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.8);
+    font-size: 40px;
+    padding-top: 50px;
+    margin-left: 28px;
+}
+
+h5{
+    color: red;
+    font-style: normal;
+        text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-left: 28px;
+}
+.mini-text3{
+    margin-top: 50px;
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-style: oblique;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
+}
+.to-right{
+    border-right: 2px solid rgba(0, 0, 0, 0.939);
+    border-color: rgb(111, 106, 104);
+}
+.contact{
+margin-left: 30%;
+padding: 20px 60px 20px 60px;
+border: 3px solid #fffbfb;
+background: linear gradient(45deg, black, grey, black);
+color: rgb(255, 255, 255);
+border-radius: 5px;
+font-size: 24px;
+text-transform: capitalize;
+}
+
+
+
+
+.service{
+    margin-top: 100px;
+    color: black;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-left: 40%;
+    font-size: 25px;
+}
+.list{
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.list ul li{
+    font-size: 25px;
+    color: green;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+
+
+.main-wrap{
+    width: 100%;
+    background: #fff;
+}
+.footer-wrap{
+    position: relative;
+    margin-top:320px; /*you can remove or edit this margin-top property when you are using this footer on your project. */
+    width:100%;
+    padding:40px;
+    background: rgb(46, 44, 44);
+}
+.footer-wrap-1{
+    display: flex;
+}
+.footer-section{
+    width:22%;
+    display:block;
+    padding:10px 35px;
+}
+.footer-section:last-of-type{
+    width:34%;
+}
+.footer-section p{
+    color:#fff;
+    font-size: 16px;
+}
+.footer-section h1{
+    font-size:22px;
+    color:#fff;
+    margin-bottom:8px;
+}
+.footer-section a{
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    padding:4px 0px;
+}
+form{
+    position:relative;
+}
+form input{
+    position:absolute;
+    height:35px;
+    width: 220px;
+    margin:8px 0px;
+    border:none;
+    outline:none;
+    padding:6px;
+    font-size:14px;
+}
+form .btn{
+    height:35px;
+    background:rgb(79, 156, 69);
+    border:none;
+    padding:0px 6px;
+    margin:8px 0px;
+    position:absolute;
+    left:60%;
+    font-weight: 600;
+    cursor: pointer;
+    color:#fff;
+}
+.btn:hover{
+    background: rgb(107,204,94);
+}
+.line{
+    margin-top:20px;
+    width:100%;
+    height:1px;;
+    background: rgb(143, 142, 142);
+}
+.social-link{
+    padding-top:25px;
+    text-align: center;
+}
+.social-link a{
+    text-decoration: none;
+    height:26px;
+    display: inline-block;
+    width:26px;
+    padding:5px;
+    border-radius:20px;
+    margin:5px;
+    background: rgb(224, 222, 222);
+}
+.social-link a img{
+    width:14px;
+    height:14px;
+}
+.footer-bottom{
+    background: rgb(12, 12, 12);
+    width:100%;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom a{
+    color:#fff;
+    font-size:14px;
+    margin-left:20px;
+    text-decoration:none;
+}
+.first-box{
+    margin-left: 20px;
+}
+.last-box{
+    margin-right:20px;
+}
+
+
+@media only screen and (max-width:768px){
+    #menuIcon{
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+    .container{
+        width: 100%;
+        height: 90vh;
+        background-image: url(/img/R.jpeg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    #text{
+        position: absolute;
+        width: 80%;
+        top:40%;
+        left: 3%;
+        padding: 15px;
+        color: white;
+        text-transform: capitalize;
+    }
+    h1{
+        padding-bottom: 10px;
+        border-bottom: 3px solid orangered;
+        font-size: 45px;
+    }
+    .mini-text{
+        padding-top: 20px;
+        color: rgba(181, 24, 24, 0.899);
+        font-size: 25px;
+        text-transform: none;
+    }
+    .menu-box ul li{
+        list-style: none;
+        margin: 15px;
+        text-align: center;
+    
+        opacity: 0;
+        transform: translateX(700px);
+    }
+    .menu-box ul li a{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        position: relative;
+        text-transform: capitalize;
+        text-shadow: 0 0 0 red;
+        transition: text-shadow 0.5s ease, transform 0.5s ease;
+    } 
+    .logo{
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    h4{
+        font-size: 38px;
+        color: navy;
+        font-style: oblique;
+            text-align: center;
+        justify-content: center;
+        text-transform: capitalize;
+        text-shadow: -2.5px 2.5px rgba(0, 0, 0, 0.8);
+        margin-right: 10px;
+    }
+    .mini-text2{
+        margin-top: 25px;
+        color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 29px;
+    margin-right: 9px;
+        font-size: 21px;
+        width: 85%;
+    }
+    .down-text2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+        background: linear-gradient(48deg, black,grey);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+    }
+    .mini-text-2{
+        font-style: italic;
+        margin-top: 25px;
+        color: rgb(255, 255, 255);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 23px;
+    margin-right: 9px;
+        font-size: 21px;
+        width: 89%;
+    }
+    .wrapper{
+        color: rgb(7, 7, 7);
+        font-style: normal;
+            text-align: center;
+        justify-content: center;
+        text-transform: capitalize;
+        text-shadow: none;
+        font-size: 30px;
+        padding-top: 20px;
+        margin-right: 15px;
+        
+    }
+    .contact2{
+        margin-left: 30%;
+        margin-top: 15%;
+        width: 40%;
+        padding: 10px 10px 10px 10px;
+        border: 3px solid #fffbfb;
+        background: linear gradient(45deg, black, grey, black);
+        color: rgb(255, 255, 255);
+        border-radius: 5px;
+        font-size: 24px;
+        text-transform: capitalize;
+        }
+    span{
+        background-color: rgba(128, 128, 128, 0.622);
+        color: black;
+        font-style: italic;
+    }
+    #services{
+        background: linear-gradient(48deg, black,grey);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: none;
+    }
+
+    h5{
+        font-size: 30px;
+        color: navy;
+        font-style: oblique;
+            text-align: center;
+        justify-content: center;
+        text-transform: capitalize;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+    .to-right{
+        border: none;
+    }
+    .list{
+        margin-top: 70px;
+        margin-left: 10%;
+    }
+    .list ul li{
+        font-size: 27px;
+        color: green;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        list-style: inside;
+        margin-bottom: 8px;
+    }
+    .main-wrap{
+        width: 100%;
+        background: #fff;
+    }
+    .footer-wrap{
+        margin-top:200px; /*you can remove or edit this margin-top property when you are using this footer on your project. */
+        width:100%;
+        padding:40px;
+        background: rgb(46, 44, 44);
+    }
+    .footer-wrap-1{
+        display: flex;
+    }
+    .footer-section{
+        width:25%;
+        display:block;
+        padding:10px 10px;
+    }
+    .footer-section:last-of-type{
+        width:30%;
+    }
+    .footer-section h1{
+        font-size:18px;
+        color:#fff;
+        margin-right: 10px;
+    }
+    .footer-section a{
+        color:#fff;
+        display:block;
+        text-decoration: none;
+    }
+    .line{
+        margin-top:30px;
+        width:100%;
+        height:1px;;
+        background: rgb(143, 142, 142);
+    }
+    .social-link{
+        padding-top:35px;
+        text-align: center;
+    }
+    .social-link a{
+        text-decoration: none;
+        height:40px;
+        display: inline-block;
+        width:40px;
+        padding:7px;
+        border-radius:20px;
+        margin:15px;
+        background: rgb(224, 222, 222);
+    }
+    .social-link a img{
+        width:25px;
+        height:25px;
+    }
+    .footer-bottom{
+        background: rgb(12, 12, 12);
+        width:100%;
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-bottom a{
+        color:#fff;
+        font-size:19px;
+        margin-left:20px;
+        text-decoration:none;
+    }
+    .first-box{
+        margin-left: 15px;
+        display: none;
+    }
+    .last-box{
+        margin-right:15px;
+    }
+}
