@@ -8,6 +8,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style/contact.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+      emailjs.init("nN4VlyIY5H70fCiiN");
+    })();
+</script>
+        
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <div class="container">
@@ -15,11 +27,16 @@
                 <div class="left"></div>
                 <div class="right">
                     <h2>Contact Us</h2>
-                    <input type="text" class="field" placeholder="Your Name" required="required">
-                    <input type="text" class="field" placeholder="Your Email" required="required">
-                    <input type="text" class="field" placeholder="Phone" required="required">
-                    <textarea placeholder="Message" class="field" required="required"></textarea>
-                    <button class="btn">Send</button>
+                    <input type="text" class="field" placeholder="Your Name" required autofocus id="name">
+                    <input type="email" class="field" placeholder="Your Email" required 
+                    autofocus
+                    id="email">
+                    <input type="number" class="field" placeholder="Phone" required 
+                    autofocus id="number">
+                    <textarea rows="3" placeholder="Message" class="field" required
+                    autofocus
+                    id="message"></textarea>
+                    <button name="submit" type="submit" class="btn" onclick="sendMail()">Send</button>
                 </div>
                 
             </div>
@@ -43,24 +60,13 @@
          
          <!-- LANDING PAGE -->
          <section>
-             
-            
-           
-         
-         
-
-
-
-
-
-
-
-
-
-
 </section>
 
      <!-- JS Part -->
+
+
+
+
         <script src="js/main.js"></script>
     </body>
 </html>
