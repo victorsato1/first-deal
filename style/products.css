@@ -276,6 +276,7 @@ h2{
 
 .product img {
 	height: 200px;
+    width: 110%;
 	margin: 1rem;
 	transition: all 0.3s;
 }
@@ -408,7 +409,7 @@ h2{
 
 .product img {
 	height: 200px;
-    width: 200%;
+    width: 110%;
 	margin: 1rem;
 	transition: all 0.3s;
 }
